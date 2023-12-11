@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace
+
+}
+
+body{
+    background: rgb(48, 48, 48);
+}
+
+video.bgvideo{
+    z-index: -1;
+    position: fixed;
+    opacity: 20%;
+}
+
+nav.topnav{
+    width: 100%;
+    height: 110px;
+    line-height: 75px;
+    padding: 0px 100px;
+    z-index: 1;
+    background-color: rgba(14, 71, 0, 0.6);
+    position: fixed;
+    border-radius: 100px;
+}
+
+img.navlogo{
+    width: 100px;
+    padding-top: 5px;
+    z-index: 1;
+    transition-duration: 2s;
+}
+
+.navlogo:hover {
+    transform: rotate(360deg); /* Rotate 360 degrees when hovering */
+  }
+
+nav.topnav ul{
+    float: right;
+    padding-top: 20px;
+}
+
+nav.topnav ul li{
+    /* makes the links go in a line, side to side */
+    display: inline-block;   
+    list-style: none;
+}
+
+nav.topnav ul li a{
+    color: rgb(0, 253, 63);
+    text-decoration: none;
+    font-size: x-large;
+    text-transform: uppercase;
+    padding: 0px 15px;  
+    transition: 0.19s;
+}
+/* hover */
+nav.topnav ul li a:hover{
+    color:rgb(255, 255, 255);
+    border-bottom: 2px solid green;
+    transition: 0.19s;
+}
+
+div.mainvid video{
+    width: 100%; 
+    
+    
+}
+
+
+
+/* conference pic style */
+
+.conpic{
+    width: 800px;
+    padding: 30px;
+    border-radius: 40px;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.conintro_container{
+    padding: 80px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(23, 31, 17, 0.6);
+}
+
+/* hall location styling start */
+
+h1.Hallheading{
+    padding: 20px;
+    padding-left: 200px;
+    color: rgb(43, 141, 24);
+    font-weight: 900;
+    
+}
+
+.hallintro{
+    font-size: 25px;
+    color: aliceblue;
+    padding-left: 70px;
+    padding-right: 800px;
+    text-align: center;
+  
+}
+
+/* hall location styling end */
+
+/* logo style */
+.logo {
+    width: 300px;
+    position: absolute;
+    top: 2350px;
+    right: 90px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    transition-duration: 2s;
+}
+  
+  .logo:hover {
+    transform: rotate(360deg); /* Rotate 360 degrees when hovering */
+  }
+  
+
+
+
+
+/* seating styling start */
+h1.seatingheading{
+    padding: 20px;
+    padding-left: 200px;
+    color: rgb(43, 141, 24);
+    font-weight: 900;
+    
+}
+
+.seatingintro{
+    font-size: 25px;
+    color: aliceblue;
+    padding-left: 70px;
+    padding-right: 800px;
+    text-align: center;
+  
+}
+
+
+
+
+
+
+/* 
+footer css start */
+
+footer{
+    background-color: rgba(16, 46, 4, 0.4);
+    margin-top: 200px;
+
+}
+
+div.footername{
+    text-align: center;
+    padding-top: 100px;
+    font-size: xx-large;
+    color: beige;
+  
+}
+
+.footerNav{
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+   
+
+}
+
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 35px;
+}
+
+
+.footerNav ul li a{
+    color: white;
+    margin: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    opacity: 70%;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 100%;
+}
+
+.footerBottom{
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(7, 15, 3, 0.5);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}

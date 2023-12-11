@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta
+  name="description"
+  content="Form for reserving room and adventure">
+      <link rel="stylesheet" href="booking.css">
+      <title>Hotel Room Booking</title>
+    </head>
+    <body>
+        <video class="bgvideo" src="bgvid.mp4" autoplay loop muted></video>
+
+      <header>
+        <nav class="topnav">
+
+            
+     
+             <a href="index.html" class="logolink">
+                 <img class="navlogo" src="logo.png" alt="Ellies">
+             </a>
+
+             <a href="#" aria-label="Empty Link" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </a>
+
+
+                 <ul class="navbar-links">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="Adventure.html">Adventure</a></li>
+                     <li><a href="branches.html">Branches</a></li>
+                     <li><a href="Restaurants.html">Restaurant</a></li>
+                     <li><a href="Booking.html">Booking</a></li>
+                    
+                 </ul>
+        </nav>
+      </header>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <h1 id="headingBooking">Room & Adventure Booking</h1>
+    <br>
+    <form id="bookingForm">
+
+        <label for="nameCustomer">Name:</label>
+        <input type="text" required id="nameCustomer"  pattern="^[A-Za-z ]+$" placeholder="Enter Your Name">
+
+        <label for="emailCustomer">Email:</label>
+        <input type="email" id="emailCustomer" placeholder="Enter Your Email">
+
+        <label for="numberCustomer" >Number:</label>
+        <input type="tel" id="numberCustomer" placeholder="Enter Your Number" pattern="[0-9]{10}" required>
+
+        <label for="branchChoose">Choose Branch:</label>
+        <select id="branchChoose" name="branchChoose" required>
+            <option value="" disabled selected>Select a branch</option>
+            <option value="Maldives">Maldives</option>
+            <option value="SriLanka">SriLanka</option>
+            <option value="India">India</option>
+        </select>
+        
+
+
+        <label for="roomType">Choose Room Type:</label>
+        <select id="roomType" name="roomType" required>
+            <option disabled selected value> -- select an option -- </option>
+            
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="triple">Triple</option>
+        </select>
+
+        <label for="roomQuantity">Room Quantity:</label>
+        <input type="number" id="roomQuantity" name="roomQuantity" min="1" value="1">
+
+
+        
+
+        <br>
+        <br>
+        
+        <p>Duration of Stay:</p>
+        <br>
+        <label for="checkIn">Check In</label>
+        <input type="date" id="checkIn" name="duration" required>
+        <label for="checkOut">Check Out:</label>
+        <input type="date" id="checkOut" name="duration"  required>
+
+        <label for="childMeal">Number of Children (5+ years):</label>
+        <input type="number" id="childMeal" name="childMeal" min="0" value="0">
+
+
+        
+        <P>Extra Requirements:</p>
+        <div class="extraRequirements">
+        <br>
+        <label for="bed">Extra bed (quantity): </label>
+        <input type="number" id="bed" name="bed" min="0" max="4" value="0">
+        <br>
+        <br>
+        <div id="wifiID">
+
+            <div class="wifi-container">
+                <label class="wifi" for="wifi">WiFi</label>
+                <input type="checkbox" id="wifi" name="extraRequirement" value="wifi">
+            </div>
+            
+        </div>
+        </div>
+        <br>
+        <div class="extraRequirements">
+        <label for="viewType">Choose View:</label>
+        <select id="viewType" name="viewType" >
+            <option disabled selected value> -- select an option -- </option>
+            
+            <option value="Pool">Pool View</option>
+            <option value="Garden">Garden View</option>
+            <option value="City">City View</option>
+        </select>
+        </div>
+<br>
+        
+        <div class="localPeople">
+            <p>Adventure Section (One Adventure Day):</p>
+            <br>
+            <label for="adventureType">Choose Adventure Type</label>
+            <select id="adventureType" name="adventureType" >
+                <option disabled selected value> -- select an option -- </option>
+                
+                <option value="Diving">Diving</option>
+                <option value="Turtle">Turtle Hatchery</option>
+                <option value="Swimming">Swimming Pool</option>
+            </select>
+            <br>
+            <br>
+            <p>Local Section</p>
+            <br>
+            <label for="numAdultsLocal">Number of Adults:</label>
+            <input type="number" id="numAdultsLocal" name="numAdultsLocal" min="0" value="0">
+            
+            <label for="numChildrenLocalAbove">Number of Children (above 5 years):</label>
+            <input type="number" id="numChildrenLocalAbove" name="numChildrenLocalAbove" min="0" value="0">
+    
+            <label for="numChildrenLocalBelow">Number of Children (Below 5 years):</label>
+            <input type="number" id="numChildrenLocalBelow" name="numChildrenLocalBelow" min="0" value="0">
+    
+            </div>
+    
+    
+            <div class="foreignPeople">
+                <p>Foreigner Section</p>
+            <label for="numAdultsForeign">Number of Adults:</label>
+            <input type="number" id="numAdultsForeign" name="numAdultsForeign" min="0" value="0">
+    
+    
+            <label for="numChildrenForeign">Number of Children:</label>
+            <input type="number" id="numChildrenForeign" name="numChildrenForeign" min="0" value="0">
+    
+    
+            </div>
+            <br>
+        <div class="guide?">
+            <p class="needAGuide">Need a guide?</p>
+            <br>
+
+            <div class="guide-container">
+                <fieldset id="adultGuideField">
+                    <legend>Adult Guide</legend>
+                    <label class="needAGuideAdult" for="guideAdult">Rs.1000</label>
+                    <input type="checkbox" id="guideAdult" name="guide" value="adult">
+                </fieldset>
+        
+                <fieldset id="kidGuideField">
+                    <legend>Kids Guide</legend>
+                    <label class="needAGuideKid" for="guideKid">Rs.500</label>
+                    <input type="checkbox" id="guideKid" name="guide" value="kid">
+                </fieldset>
+            </div>
+            
+        </div>
+
+        <br>
+
+        <label for="promoCode">Promo Code:</label>
+        <input type="text" id="promoCode" name="promoCode" placeholder="Enter Promo Code">
+        <button type="button" id="promoCodeButton">Check Promo Code</button>
+
+        <button type="button" id="checkLoyaltyButton">Check Loyalty</button>
+        <button type="submit" id="addBooking">Add Another Booking</button>
+
+
+        <div class="endPart"> 
+        <p id="colorCurrentOverall">Current Booking:</p>
+        <p id="currentBooking">:)</p>
+
+        <p id="colorCurrentOveralll">Total Cost of Current Booking:</p>
+        <br>
+        <p id="currentBookingCost">Pick Your Room and Date!</p>
+        <br>
+        <p id="colorCurrentOverallll">Overall Booking:</p>
+        <br>
+        <p id="overallBookingOutput" >(Add Another Booking) <br></p>
+        <br>
+        <p id="colorCurrentOveralllll">Total Cost of Overall Booking:</p>
+        <br>
+        <p id="overallBookingCost" >0</p>
+        <br>
+        <br>  
+        
+
+        <button type="submit" id="bookNowButton" >Book Now</button>
+        
+        <button type="submit" id="bookAdventurebutton">Book Adventure</button>
+        <br>
+
+        <button type="submit" id="favourite">Add to Favorites</button>
+
+        <button type="button" id="viewFavourite">View Favourite</button>
+    </div>
+        
+    </form>
+    <br>
+
+    <script src="booking.js" defer> </script>
+    </body>
+    
+
+</html>
